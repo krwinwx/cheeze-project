@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Gloucester MT Extra Condensed';
+    src: url('fonts/glecb.ttf');
+}
+
+body {
+    color: #131EBD;
+    background-color: #E9E4D7;
+    padding: 10px;
+    font-size: 44px;
+    font-family: Gloucester MT Extra Condensed;
+}
+
+.container-center {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.container-right {
+    text-align: right;
+    justify-content: right;
+    display: flex;
+    align-items: right;
+}
+
+.container-left {
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    align-items: left;
+}
+
+.container-center p {
+    margin: 0;
+    font-size: 60px;
+}
+
+.logo {
+    width: 70px;
+    margin-right: 18px;
+}
+
+.icon {
+    width: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.collage-container {
+    width: 1000px;
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+} 
+
+.collage-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
