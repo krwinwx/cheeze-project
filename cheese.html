@@ -3,16 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHEEZE!</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="js.js"></script>
 </head>
 
 <body>
-    <div class="container-right">
+    <!-- <div class="container-right">
         <img src="icons/inst.ico" class="icon" onclick="window.open('https://www.instagram.com/', '_blank');">
         <img src="icons/vk.ico" class="icon" onclick="window.open('https://www.vk.com/', '_blank');">
         <img src="icons/telegram.ico" class="icon" onclick="window.open('https://www.telegram.org/', '_blank');">
+    </div> -->
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <!-- <a href="cheese.html"><i class="fa-brands fa-telegram"></i></a>
+        <a href="cheese.html"><i class="fa-brands fa-youtube"></i></a> -->
     </div>
 
     <div class="container-center">
@@ -33,57 +41,107 @@
             <img src="images/sourdough-poster.jpg" alt="sourdough poster">
         </div>
     </div>
-
+    <p></p>
     <div class="container-center">
-        <table>
-            <caption><img src="images/logo.png" class="logo"> M E N U.</caption>
-            <tr>
-                <td>Bagels.</td>
-                <td>Sandwiches.</td>
-                <td>Coffee.</td>
-            </tr>
-        </table>
-
-        <!-- <table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100%">
-            <caption>MENU.</caption>
-            <thead>
+        <div class="menu-container">
+            <table>
+                <caption style="text-align: left;"><img src="images/logo.png" class="logo"> M E N U.</caption>
                 <tr>
-                    <th class="dcf-txt-center" scope="col">bagels.</th>
-                    <th class="dcf-txt-center" scope="col">sandwiches.</th>
-                    <th class="dcf-txt-center" scope="col">coffee.</th>
+                    <td style="width:300px;">Bagels.</td>
+                    <td>Sandwiches.</td>
+                    <td>Coffee.*</td>
                 </tr>
-            </thead>
-            <tbody>
+                <tr class="black">
+                    <td class="menu-item">
+                        <span class="left">Salt, Pepper & Butter<sup>V</sup></span>
+                        <span class="right">4</span>
+                    </td>
+                    <td class="menu-item">                   
+                        <span class="left">Grilled Cheeze!<sup>V</sup></span>
+                        <span class="right">6</span>
+                    </td>
+                    <td class="menu-item">
+                        <span class="left">Espresso</span>
+                        <span class="right">3</span>
+                    </td>
+                </tr>
+                <tr class="black">
+                    <td class="menu-item">
+                        <span class="left">Rucola Balsamic<sup>V</sup></span>
+                        <span class="right">4</span>
+                    </td>
+                    <td class="menu-item">                   
+                        <span class="left">Veggiez<sup>V</sup></span>
+                        <span class="right">5</span>
+                    </td>
+                    <td class="menu-item">
+                        <span class="left">Cappuccino</span>
+                        <span class="right">4</span>
+                    </td>
+                </tr>
+                <tr class="black">
+                    <td class="menu-item">
+                        <span class="left">Greek Love<sup>V</sup></span>
+                        <span class="right">4</span>
+                    </td>
+                    <td class="menu-item">                   
+                        <span class="left">Egg & Mayo</span>
+                        <span class="right">5</span>
+                    </td>
+                    <td class="menu-item">
+                        <span class="left">Latte</span>
+                        <span class="right">4</span>
+                    </td>
+                </tr>
                 <tr>
-                    <td class="dcf-txt-center" data-label="bagels.">Salt &amp; Pepper </td>
-                    <td class="dcf-txt-center" data-label="sandwiches.">Grilled Cheeze!</td>
-                    <td class="dcf-txt-center" data-label="coffee.">Americano</td>
+                    <td>Desserts.</td>
+                    <td class="menu-item">
+                        <span class="left">Chicken Salad</span>
+                        <span class="right">6</span>
+                    </td>
+                    <td>Tea.*</td>
                 </tr>
-                <tr>
-                    <td class="dcf-txt-center" data-label="bagels.">Rucola Love</td>
-                    <td class="dcf-txt-center" data-label="sandwiches.">Egg &amp; Mayo</td>
-                    <td class="dcf-txt-center" data-label="coffee.">Iced Latte</td>
+                <tr class="black">
+                    <td class="menu-item">
+                        <span class="left">Choc Chip Cookie</span>
+                        <span class="right">1.5</span>
+                    </td>
+                    <td class="menu-item">
+                        <span class="left">Avocados<sup>V</sup></span>
+                        <span class="right">6</span>
+                    </td>
+                    <td class="menu-item">
+                        <span class="left">Jasmine</span>
+                        <span class="right">2.5</span>
+                    </td>
                 </tr>
-                <tr>
-                    <td class="dcf-txt-center" data-label="bagels.">desserts.</td>
-                    <td class="dcf-txt-center" data-label="sandwiches.">Chicken Salad</td>
-                    <td class="dcf-txt-center" data-label="coffee.">tea.</td>
+                <tr class="black">
+                    <td class="menu-item">
+                        <span class="left">Tiramisu</span>
+                        <span class="right">4</span>
+                    </td>
+                    <td class="menu-item">
+                        <span class="left">Caprese<sup>V</sup></span>
+                        <span class="right">4</span>
+                    </td>
+                    <td class="menu-item">
+                        <span class="left">Milk Oolung</span>
+                        <span class="right">2.5</span>
+                    </td>
                 </tr>
-                <tr>
-                    <td class="dcf-txt-center" data-label="bagels.">Cookie</td>
-                    <td class="dcf-txt-center" data-label="sandwiches.">Caprese</td>
-                    <td class="dcf-txt-center" data-label="coffee.">OOlong</td>
+                <tr></tr>
+                <tr style="font-size: 35px;">
+                    <td></td>
+                    <td class="green" style="text-align: right;">V vegetarian</td>
+                    <td class="blue" style="text-align: right;">* can be iced</td>
                 </tr>
-                <tr>
-                    <td class="dcf-txt-center" data-label="bagels.">Tiramisu</td>
-                    <td class="dcf-txt-center" data-label="sandwiches.">Avocados</td>
-                    <td class="dcf-txt-center" data-label="coffee.">Earl Grey</td>
-                </tr>
-            </tbody>
-        </table> -->
+            </table>    
+        </div>
     </div>
-
-
+    <p></p>
 </body>
+<footer>
+    <p>CHEEZE! Cafe &copy; 2024 Designed by <a style="cursor: pointer; color: pink;">krwinwx</a></p>
+</footer>    
 
 </html>

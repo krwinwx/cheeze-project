@@ -6,9 +6,27 @@
 body {
     color: #131EBD;
     background-color: #E9E4D7;
-    padding: 10px;
     font-size: 44px;
     font-family: Gloucester MT Extra Condensed;
+}
+
+.social-icons {
+    color: black;
+    display: flex;
+    justify-content: right;
+}
+
+.social-icons a {
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #E9E4D7;
+}
+
+.social-icons a i{
+    font-size:  1em;
+    color:#131EBD;
 }
 
 .container-center {
@@ -17,6 +35,12 @@ body {
     display: flex;
     align-items: center;
 }
+
+.social-icons a i:hover {
+    color:black;
+    transition: 0.5s;
+}
+
 
 .container-right {
     text-align: right;
@@ -48,6 +72,10 @@ body {
     cursor: pointer;
 }
 
+.icon::hover{
+    color: black;
+}
+
 .collage-wrapper {
     display: flex;
     justify-content: center;
@@ -69,83 +97,77 @@ body {
 }
 
 table {
-    max-width: 1000px;
-    border-collapse: collapse;
     background-color: white;
+    border-spacing: 30px 10px;
+    width: 900px;
+    /* overflow-x:scroll; */
+    table-layout:auto;
+    /* table-layout: fixed; */
 }
 
-tr
+/* tr, td
 {
     border: 1px solid grey;
+} */
+
+/* .menu-item {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.menu-item {
+    text-align: left;
+    position:relative;
+    color: black;
+    /* padding-right: 50px; Обеспечивает пространство для цены */
 }
 
+.left {
+    text-align: left;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+sup {
+    color: #8bc34a;
+    font-size: 25px;
+}
+
+caption {
+    font-size: larger;
+    padding-bottom: 2%;
+}
 
 .menu-container {
-    max-width: 1200px;
+    max-width: 900px;
+    width: 100%;
+    width: auto;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f5f0e6;
+    background-color: white;
     border: 1px solid #ccc;
-    font-family: 'Gloucester MT Extra Condensed', sans-serif;
+    overflow-x:auto;
+}
+
+.blue {
     color: #131EBD;
 }
 
-.menu-icon {
-    width: 70px;
-    display: block;
-    margin: 0 auto 10px;
+.green {
+    color: #8bc34a;
 }
 
-.menu-title {
+footer {
     text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.menu-grid {
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu-section {
-    flex: 1;
-    margin: 0 10px;
-}
-
-.menu-section h2 {
-    color: #1a3da7;
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.menu-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.menu-section li {
-    font-size: 24px;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.price {
-    margin-left: 10px;
-}
-
-.veg {
-    color: #8bc34a;
-    font-weight: bold;
-    margin-left: 5px;
-}
-
-.veg-note, .note {
-    font-size: 14px;
-    color: #8bc34a;
-    text-align: right;
-}
-
-.note {
-    color: #131EBD;
+  padding: 3px;
+  background-color: #131EBD;
+  color: white;
+font-size:large;
+display: block;
+font-weight: lighter;
+box-sizing: border-box;
 }
