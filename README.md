@@ -1,4 +1,4 @@
-one-page site projest for cheeze project cafe
+one-page site projest for cheeze cafe
 contains responsive menu-table and collage-container with concept photos of cheeze cafe
 
 *** CONCEPT ***
